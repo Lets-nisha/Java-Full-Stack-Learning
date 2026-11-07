@@ -1,0 +1,135 @@
+/* h3 {
+    color: green;
+} */
+
+.paragraph {
+    color: blue;
+}
+
+#id-paragraph {
+    color: purple;
+}
+
+span {
+    color: black;
+}
+
+/* group selector  */
+
+#heading1,
+#heading2,
+#heading3 {
+    color: blue;
+}
+
+.container {
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 200px;
+    width: 300px;
+    padding: 15px;
+    /* text-align: center; */
+    background: green;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.containerMarg {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 200px;
+    width: 300px;
+    padding: 15px;
+    /* text-align: center; */
+    background: green;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+/* day 3 */
+
+.outlineBox {
+    width: 250px;
+    height: 200px;
+    border: 2px solid black;
+    outline: 2px solid blue;
+    outline-offset: 5px;
+    border-radius: 5px;
+}
+
+.opasity {
+    opacity: 0.5;
+    /* visibility: hidden; */
+    /* display: none; */
+}
+
+.overflow {
+    width: 250px;
+    height: 300px;
+    overflow: auto;
+    resize: both;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: 2px solid blue;
+    outline-offset: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.boxSizeing {
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.boxSizeing1 {
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.para {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400px;
+    font-style: oblique;
+    /* font-variant: small-caps; */
+    line-height: 80px;
+}
+
+.ulList {
+    /* list-style-image: url(./right-arrow.png); */
+    list-style-position: outside;
+    list-style-type: circle;
+}
+
+.boxxx {
+    width: 250px;
+    height: 350px;
+    border: 2px solid violet;
+    text-align: justify;
+    padding: 20px;
+    text-align-last: right;
+    text-indent: 25px;
+    text-transform: lowercase;
+    text-transform: uppercase;
+    text-transform: capitalize;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+
+}
+
+.boxShadow {
+    width: 350px;
+    height: 550px;
+    border: 2px solid violet;
+    padding: 20px;
+    box-shadow: -2px -3px 4px 4px black;
+    text-shadow: 0.8px 0.3px 2px rgb(64, 194, 246);
+    margin: 50px;
+    font-size: 30px;
+}
