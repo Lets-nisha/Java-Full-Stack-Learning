@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #050372f1;
+    color: white;
+    padding: 10px;
+    gap: 10px;
+}
+
+.NavLeft {
+    font-weight: bold;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.NavRight {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+}
+
+.NavRight a {
+    color: aliceblue;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+main {
+    color: #050372f1;
+}
