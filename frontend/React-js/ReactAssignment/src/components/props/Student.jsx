@@ -8,7 +8,7 @@ const Student = (props) => {
             <p>Age: {props.Age}</p>
             <p>Course: {props.Course}</p>
             <p>City: {props.City}</p>
-            <p>State: {props.State}</p>
+            
         </>
     )
 }

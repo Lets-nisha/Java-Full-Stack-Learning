@@ -1,8 +1,6 @@
 import './index.css'
 import Employee from './components/props/Employee'
 import PersonCard from './components/destructuring/PersonCard'
-import PersonCard2 from './components/destructuring/PersonCard2'
-import PersonCard3 from './components/destructuring/PersonCard3'
 import Product from './components/props/Product'
 import Profile from './components/passObj/Profile'
 import Skills from './components/passAnArry/Skills'
@@ -83,8 +81,9 @@ function App() {
         Age={20}
         Course="BCA"
         City="Noida"
-        State="Uttar Pradesh"
+
       />
+      <hr />
 
       <Product
         Product="Laptop"
@@ -92,6 +91,7 @@ function App() {
         Brand="Dell"
         Category="Electronics"
       />
+      <hr />
 
       <Employee
         Name="Nisha"
@@ -99,6 +99,7 @@ function App() {
         Department="IT"
         Salary={50000}
       />
+      <hr />
 
       <User
         Name="Nisha"
@@ -107,58 +108,72 @@ function App() {
         Country="India"
       />
 
-      <PersonCard
-        Name="Nisha"
-        Profession="Software Engineer"
-        Age={20}
-        Location="India"
-      />
+      <hr />
+      <PersonCard>
+        <h1>Name : Nisha </h1>
+        <h3> Profession=: Dev</h3>
+        <h3> Age=: 45</h3>
+        <h3> Location : Noida</h3>
 
-      <PersonCard2
-        Name="Neha"
-        Profession="Web Developer"
-        Age={20}
-        Location="India"
-      />
+      </PersonCard>
 
-      <PersonCard3
-        Name="nisha4"
-        Profession="App Developer"
-        Age={20}
-        Location="India"
-      />
+
+      <PersonCard>
+        <h1>Name : Neha  </h1>
+        <h3> Profession=: Dev</h3>
+        <h3> Age=: 45</h3>
+        <h3> Location : Noida</h3>
+
+      </PersonCard>
+      <hr />
+
 
       <Skills skills={TechSkills} />
 
+      <hr />
       <Profile ProfileInfo={ProfileInfo} />
 
+      <hr />
+
       <ProductObj />
+      <hr />
       <UserStatus isOnline={false} />
+      <hr />
       <ProfileCard Name="Doramon" Profession="Machine" img="https://tse2.mm.bing.net/th/id/OIP.m9YgutB2Riw4NSU8qbZYoAHaF7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" />
+      <hr />
       <StudentChild Name="Nisha" Age="20" Course="BCA" Year="2nd" Semester="4th" Batch="(2023-2026)" />
+      <hr />
       <Welcome name='Nisha' />
+      <hr />
       <Welcome />
+      <hr />
 
       <ProdectList products={Productlists} />
+      <hr />
 
       <StudentList studentInfo={studentInfo} />
+      <hr />
 
-      <div className="container">
-        <Card>
-          <h2>About React</h2>
-          <p>React is a JavaScript library used to build user interfaces.</p>
-        </Card>
+      <div >
+        <h1>Task 15: Card Component with Children</h1>
+        <div className="container">
+          <Card>
+            <h2>About React</h2>
+            <p>React is a JavaScript library used to build user interfaces.</p>
+          </Card>
 
-        <Card>
-          <h2>About JavaScript</h2>
-          <p>JavaScript is used to make websites interactive.</p>
-        </Card>
+          <Card>
+            <h2>About JavaScript</h2>
+            <p>JavaScript is used to make websites interactive.</p>
+          </Card>
 
-        <Card>
-          <h2>About CSS</h2>
-          <p>CSS is used to style and design web pages.</p>
-        </Card>
+          <Card>
+            <h2>About CSS</h2>
+            <p>CSS is used to style and design web pages.</p>
+          </Card>
+        </div>
       </div>
+
 
       <hr />
 
@@ -183,36 +198,21 @@ function App() {
       <hr />
 
       <div>
-        <CourseCard
-          courseName="React JS"
-          instructor="nisha"
-          duration="3 Months"
-          level="Beginner"
-          price="2999"
-        />
 
+        <CourseCard>
+          <h3> courseName : JavaScript</h3>
+          <h3> instructor : Akshay Saini</h3>
+          <h3> duration : 2 Months</h3>
+          <h3> level : Intermediate</h3>
+          <h3>price : 1999</h3>
+        </CourseCard>
 
-        <CourseCard
-          courseName="JavaScript"
-          instructor="Akshay Saini"
-          duration="2 Months"
-          level="Intermediate"
-          price="1999"
-        />
-
-        <CourseCard
-          courseName="CSS"
-          instructor="Thapa Technical"
-          duration="1 Month"
-          level="Beginner"
-          price="999"
-        />
       </div>
 
       <hr />
-        <div>
-      <Dashboard student={student} />
-    </div>
+      <div>
+        <Dashboard student={student} />
+      </div>
 
     </>
 

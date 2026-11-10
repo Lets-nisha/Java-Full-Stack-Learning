@@ -1,15 +1,12 @@
 import React from "react";
 
-function CourseCard(props) {
+function CourseCard({children}) {
   return (
     <div className="course-card">
-        <h1>Task 19: Reusable Course Card</h1>
-      <p>Course Name :{props.courseName}</p>
-
-      <p>Instructor: {props.instructor}</p>
-      <p>Duration: {props.duration}</p>
-      <p>Level: {props.level}</p>
-      <p>Price: ₹{props.price}</p>
+      <h1>CourseCard</h1>
+       <div className="card">
+            {children}
+        </div>
     </div>
   );
 }
