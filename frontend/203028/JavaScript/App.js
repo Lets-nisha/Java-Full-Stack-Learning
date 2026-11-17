@@ -704,3 +704,95 @@
 // ------------------------------------------------------------
 
 // filter method
+
+//--------------------------------------------------------------------------
+
+// forEach
+
+// let array = [10, 20, 30 , 40, 50]
+// array.forEach((item) => {
+
+//   console.log(item + 5)
+    
+// });
+
+// ------------------------------------------------------------------
+
+// some
+
+// let ageData = [10, 20, 15 , 40]
+
+// let result = ageData.some((age)=>{
+//     return age > 18
+// })
+// console.log(result)
+
+// ------------------------------------------------------------------------------
+
+// every
+
+// let ageDataEvery = [19, 20, 23 , 40]
+
+// let result2 = ageDataEvery.every((age)=>{
+//     return age > 18
+// })
+//   console.log(result2)
+
+//reduce is HW--------------------------------------------------------------------------------
+
+// array destructureing-------------
+
+// let student = ["rahul", 45,"mern"]
+// let[name ,age, batch] = student
+
+// console.log(name, age, batch)
+
+// --------------------------------------------------------------------
+
+// let data = "Nisha"
+// let clone = data // [...data] with the help of  spread operator
+
+// let clone = data.concat()     //concat 
+// let clone = data.slice()    // slice 
+// let clone = Array.from(data)    //Array.from
+// let clone = data.map((item)=>item) 
+
+// --------------------------------------------------------------------------------------
+
+// deep copy 1st eg
+// let clone = structuredClone(data)
+// let clone = JSON.parse(JSON.stringify(data))
+
+// console.log(data)
+// console.log(clone)
+
+// ---------------------------------------------------------------------------------------------
+
+// data = "ali"
+// console.log(data)
+// console.log(clone)
+
+// -------------------------------------------------------------------------
+
+// let data1 = [12, 14, 15] //same address
+// let clone1 = data //same address
+
+// console.log(data)
+// console.log(clone)
+
+// data.push(16)
+
+// console.log(data)
+// console.log(clone)
+
+// ---------------------------------------------------
+// let data = [12,13,14,[3,4]]
+// let clone = [...data]
+// data [4][1] = 7
+// console.log(data)
+// console.log(clone)
+// ----------------------------------------------------------------------------------------------------------------------------
+
+// Object
+
+

@@ -1,4 +1,5 @@
-import './App.css'
+// import { createContext } from 'react'
+// import Child from './components/createContext/Child';
 // import ApiResponseWithTryCatch from './components/useEffectHook/ApiResponseWithTryCatch'
 // import UseEffectHook from './components/useEffectHook/UseEffectHook'
 // import Day5 from './components/Day5'
@@ -9,19 +10,24 @@ import './App.css'
 // import Header from './components/Header';
 // import User from './components/User';
 
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import { useReducer } from "react"
 
-import Header from "./components/Routing/pages/Header";
-import Home from "./components/Routing/pages/Home";
-import About from "./components/Routing/pages/About";
-import Skills from "./components/Routing/pages/Skills";
-import Project from "./components/Routing/pages/Project";
-import User from './components/Routing/pages/User'; //peramitries path
-import PageNotFound from './components/Routing/PageNotFound';
-import Form from './components/Form/form';
+// import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
-function App() {
+// import Header from "./components/Routing/pages/Header";
+// import Home from "./components/Routing/pages/Home";
+// import About from "./components/Routing/pages/About";
+// import Skills from "./components/Routing/pages/Skills";
+// import Project from "./components/Routing/pages/Project";
+// import User from './components/Routing/pages/User'; //peramitries path
+// import PageNotFound from './components/Routing/PageNotFound';
+// import Form from './components/Form/form';
 
+
+// let data = createContext()
+
+
+// function App() {
   // let info = {
   //   name: "Nisha",
   //   age: 28,
@@ -62,32 +68,35 @@ function App() {
   //   },
   // ]
 
-  return (
-    <>
-      <BrowserRouter>
-        <Header />
+  // let name = "Nisha";
 
+  // return (
+    <>
+
+{/* 
+    <data.Provider value={name}>
+      <Child/>
+    </data.Provider> */}
+
+      {/* <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/project" element={<Project />} />
           <Route path="/user/:id" element={<User />} />
-          <Route path="/form" element={<Form />} />
-
-
+          <Route path="/form" element={<Form />} /> */}
           {/* //while coud routes */}
           {/* 1st */}
-          <Route path="/*" element={<PageNotFound />} />
+          {/* <Route path="/*" element={<PageNotFound />} /> */}
           {/* 2nd */}
           {/* <Route path="/*" element={<Navigate to="/" />} /> */}
-
-        </Routes>
-
+        {/* </Routes> */}
         {/* <Form /> */}
+      {/* </BrowserRouter> */}
 
 
-      </BrowserRouter>
 
       {/* <div> */}
       {/* <ApiResponseWithTryCatch /> */}
@@ -124,7 +133,86 @@ function App() {
 
 
     </>
+//   )
+// }
+
+// export default App
+
+// export {data}
+
+
+// ------------------------------------------------------------------------------------------------------------------
+
+
+// import React, { useState } from 'react'
+// import './App.css'
+// import { useMemo } from 'react'
+
+// const App = () => {
+
+//   const [inc, setInc] = useState(0)
+//   const [dec, setDec] = useState(20)
+
+  // function multiResult(){
+  //   console.log("func call...")
+  //   return inc * 2
+  // }
+
+//   let multiResultVal = useMemo(function multiResult(){
+//      console.log("func call...");
+//     return inc * 2
+//   },[inc] )
+
+//   return (
+//    <>
+//    <div>
+//     <h1>Incres : {inc}</h1>
+//     <h1>Decres : {dec}</h1>
+//     <h1>Multi Result : {multiResultVal}</h1>
+//     <button onClick={()=>{setInc(inc+1)}}>Incres</button>
+//     <button onClick={()=>{setDec(dec-1)}}>Decres</button>
+//    </div>
+//    </>
+//   )
+// }
+
+// export default App
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// import React,  from 'react'
+
+let initialstte = 0
+let reducer = (state, action)=>{
+  switch(action){
+    case "increment":
+    return  state + 1
+
+     case "decrement":
+    return  state - 1
+  }
+}
+
+const App = () => {
+
+  let [state, dispatch] = useReducer(reducer,initialstte)
+
+  return (
+    <div>
+      <h1>State : {state}</h1>
+      <button onClick={()=> dispatch("increment")}>incre</button>
+      <button onClick={()=> dispatch("decrement")}>decre</button>
+    </div>
   )
 }
 
 export default App
+
+// ------------------------------
+// { memo, useCallback, useMemo }
+// useCallback
+// useMemo
+
+// memo
+
+// ------------------------------
