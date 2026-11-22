@@ -14,7 +14,9 @@ export const UserProvider = ({ children }) => {
     const updateName = () => {
         setUser({
             ...user,
-            name: "Alex"
+            name: "Alex",
+            email: "Alex@gmail.com",
+            role: "Admin"
         });
     };
 

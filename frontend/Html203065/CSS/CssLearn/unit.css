@@ -1,0 +1,71 @@
+.liqued {
+  border: 2px solid black;
+  width: 80%;
+  height: 100px;
+}
+
+.boxes {
+  border: 2px solid black;
+  width: 80%;
+  height: 100px;
+  background-color: aqua;
+  font-size: 1rem;
+  /* html{
+    font-size: 10px ;
+} */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.box6cn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box6 {
+  width: 50vw;
+  height: 100vh;
+  background: #235a0c;
+}
+
+.box61 {
+  width: 50vw;
+  height: 100vh;
+  background: #1ed397;
+}
+
+.box612 {
+  border: 2px solid black;
+  width: 150px;
+  height: 150px;
+  background: #a91616;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+
+.box6123 {
+  border: 2px solid black;
+  width: 500px;
+  height: 500px;
+  margin: 100px;
+  position: relative;
+}
+
+.boxChile6123 {
+  border: 2px solid black;
+  background: #9c0a0a;
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  /* position: sticky; */
+
+  /* position: fixed; */
+
+  top: 20px;
+  left: 10px;
+}
+

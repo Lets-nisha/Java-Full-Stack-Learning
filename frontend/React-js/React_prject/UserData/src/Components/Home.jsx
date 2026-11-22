@@ -22,6 +22,19 @@ const Home = () => {
         getUsers()
     }, [])
 
+    let handleDelete = ((id) => {
+        const confirm = window.confirm("are you sure delete ?")
+        if (confirm) {
+            axios
+                .delete(`http://localhost:3000/users/${id}`)
+                .then(() => {
+                    setUsers(users.filter((user) => user.id !== id));
+                })
+                .catch((err) => console.log(err));
+        }
+
+    })
+
     if (loading) {
         return (
             <div className="loading-container">
@@ -132,6 +145,8 @@ const Home = () => {
                                                         className="action-btn delete-btn"
                                                         type="button"
                                                         title="Delete functionality not connected yet"
+                                                        onClick={() => { handleDelete(user.id) }}
+
                                                     >
                                                         Delete
                                                     </button>

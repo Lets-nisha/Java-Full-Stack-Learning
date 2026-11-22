@@ -10,7 +10,8 @@
 // import Header from './components/Header';
 // import User from './components/User';
 
-import { useReducer } from "react"
+// import { useCallback, useReducer, useState } from "react"
+// import Counter from "./context/Counter"
 
 // import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
@@ -182,26 +183,37 @@ import { useReducer } from "react"
 
 // import React,  from 'react'
 
-let initialstte = 0
-let reducer = (state, action)=>{
-  switch(action){
-    case "increment":
-    return  state + 1
+// let initialstte = 0
+// let reducer = (state, action)=>{
+//   switch(action){
+//     case "increment":
+//     return  state + 1
 
-     case "decrement":
-    return  state - 1
-  }
-}
+//      case "decrement":
+//     return  state - 1
+//   }
+// }
 
 const App = () => {
 
-  let [state, dispatch] = useReducer(reducer,initialstte)
+  // let [state, dispatch] = useReducer(reducer,initialstte)
+  // const [cnt, setcnt] = useState(0)
+  // let data = useCallback(function data(){   //based func
+  // },[])
 
   return (
     <div>
-      <h1>State : {state}</h1>
+
+  {/* <Counter data={data}>
+    <h1>{cnt}</h1>
+    <button onClick={()=>setcnt(cnt + 1)}>increment</button>
+  </Counter> */}
+
+
+      {/* <Counter/> */}
+      {/* <h1>State : {state}</h1>
       <button onClick={()=> dispatch("increment")}>incre</button>
-      <button onClick={()=> dispatch("decrement")}>decre</button>
+      <button onClick={()=> dispatch("decrement")}>decre</button> */}
     </div>
   )
 }
@@ -214,5 +226,5 @@ export default App
 // useMemo
 
 // memo
-
+// useref 
 // ------------------------------

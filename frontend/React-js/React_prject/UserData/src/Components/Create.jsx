@@ -59,7 +59,6 @@ const Create = () => {
                 type="text"
                 name="name"
                 placeholder="Enter Name"
-                value={values.name}
                 onChange={handleChange}
                 required
               />

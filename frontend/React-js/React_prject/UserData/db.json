@@ -1,29 +1,6 @@
 {
   "users": [
     {
-      "id": "1",
-      "name": "Leanne Graham",
-      "username": "Bret",
-      "email": "Sincere@april.biz",
-      "address": {
-        "street": "Kulas Light",
-        "suite": "Apt. 556",
-        "city": "Gwenborough",
-        "zipcode": "92998-3874",
-        "geo": {
-          "lat": "-37.3159",
-          "lng": "81.1496"
-        }
-      },
-      "phone": "1-770-736-8031 x56442",
-      "website": "hildegard.org",
-      "company": {
-        "name": "Romaguera-Crona",
-        "catchPhrase": "Multi-layered client-server neural-net",
-        "bs": "harness real-time e-markets"
-      }
-    },
-    {
       "id": "2",
       "name": "Ervin Howell",
       "username": "Antonette",
@@ -359,22 +336,11 @@
       "id": "CvSQ_Z6kESs"
     },
     {
-      "name": "NISHA TURK",
-      "username": "Bi",
-      "email": "nishaturkey7500@gmail.com",
+      "name": "Nisha Biiii",
+      "username": "Biii",
+      "email": "nishaturkey9500@gmail.com",
       "phone": "09520839440",
-      "website": "dsfffffff.ccc.c",
-      "address": "Manpur north",
-      "city": "Delhi",
-      "gender": "Male",
-      "id": "evLa73NL10Q"
-    },
-    {
-      "name": "Nisha Bi",
-      "username": "Bi",
-      "email": "nishaturkey7500@gmail.com",
-      "phone": "09520839440",
-      "website": "qwwwwwwwwwwww",
+      "website": "cmmmm",
       "address": "tehsil swar, manpur uttari Suar Rampur Uttar Pradesh India, 244924",
       "city": "Rampur",
       "gender": "Female",

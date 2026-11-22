@@ -14,7 +14,55 @@
     <!-- <button id="btn">click</button> -->
 
     <!-- <script src="App.js"></script> -->
-    <script src="./obj.js"></script>
+    <!-- <script src="./obj.js"></script> -->
+
+    <label>name</label>
+    <input type="text"  id="name" placeholder="enter name"><br>
+
+    
+    <label>email</label>
+    <input type="text" id="email" placeholder="enter name"><br>
+
+    <label>pass</label>
+    <input type="text"  id="pass" placeholder="enter name"><br>
+    <button onclick="handleData()" >submit</button>
+
+    <script>
+        
+function handleData(){
+    let firstName= document.getElementById("name").value 
+    let email= document.getElementById("email").value 
+    let pass= document.getElementById("pass").value 
+
+
+    let frmData={
+        firstName,
+        email,
+        pass
+    }
+
+    fetch("https://jsonplaceholder.typicode.com/users",{
+    method:"POST",
+    headers:{
+        "Content-type": "Appication/json"
+    },
+    body: JSON.stringify(frmData)
+    }).then((res) => {
+    return res.json()
+    }).then((result) => {
+    console.log(result)
+    }).catch((err)=>{
+        console.log(err)
+    })
+
+}
+
+// put WFH
+
+// console.log(handleData)
+
+    </script>
+
 </body>
 
 </html>
