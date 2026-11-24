@@ -5,48 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 
 </head>
 
 <body>
-    <h1 id="heading">helo !!</h1>
-    <!-- <button id="btn">click</button> -->
 
-    <!-- <script src="App.js"></script> -->
-    <!-- <script src="./obj.js"></script> -->
+    <h1 id="heading">helo !!</h1>
 
     <label>name</label>
     <input type="text"  id="name" placeholder="enter name"><br>
 
-    
     <label>email</label>
     <input type="text" id="email" placeholder="enter name"><br>
 
     <label>pass</label>
     <input type="text"  id="pass" placeholder="enter name"><br>
-    <button onclick="handleData()" >submit</button>
+
+    <button onclick="handleData(1)" >submit</button>
 
     <script>
-        
-function handleData(){
+    function handleData(id){
     let firstName= document.getElementById("name").value 
     let email= document.getElementById("email").value 
     let pass= document.getElementById("pass").value 
 
+    console.log(firstName,email,pass)
 
-    let frmData={
+     let frmData={
         firstName,
         email,
         pass
     }
 
-    fetch("https://jsonplaceholder.typicode.com/users",{
-    method:"POST",
+    fetch("https://jsonplaceholder.typicode.com/users/"+id,{
+    // method:"POST",
+    method:"DELETE",
+
     headers:{
-        "Content-type": "Appication/json"
+        "Content-type": "Application/json"
     },
-    body: JSON.stringify(frmData)
+    body: JSON.stringify(frmData) 
     }).then((res) => {
     return res.json()
     }).then((result) => {
@@ -54,15 +53,11 @@ function handleData(){
     }).catch((err)=>{
         console.log(err)
     })
-
-}
-
-// put WFH
-
-// console.log(handleData)
-
+    }
     </script>
 
+    
+<!-- put hw -->
 </body>
 
 </html>
