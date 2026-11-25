@@ -8,20 +8,26 @@ const File = () => {
 
     let dispatch = useDispatch()
 
-    let apdateAge = (Age)=>{
-        dispatch({type:"UPDATE_AGE", payload:Age})
+    let apdateAge = (age)=>{
+        dispatch({type:"UPDATE_AGE", payload:age})
+    }
+     let apdateName = (firstName)=>{
+        dispatch({type:"UPDATE_NAME", payload:firstName})
+    }
+     let apdateSatus = (status)=>{
+        dispatch({type:"UPDATE_STATUS", payload:status})
     }
     
   return (
     <div>
         <h1>Name: {firstName}</h1>
-        <button>update</button>
+        <button onClick={()=>{apdateName("Turk")}} >update</button>
 
         <h1>Age: {age}</h1>
-        <button onClick={apdateAge}> update</button>
+        <button onClick={()=>{apdateAge(25)}}> update</button>
 
         <h1>Status: {status}</h1>
-        <button>update</button>
+        <button onClick={()=>{apdateSatus("Eng")}}>update</button>
 
     </div>
   )

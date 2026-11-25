@@ -160,3 +160,61 @@ span {
     align-self: flex-end;
 } */
 
+
+
+.mes::before{
+content: "Here-";
+color: red;
+}
+
+.mes::after{
+content: "-Elements";
+color: red;
+}
+
+::placeholder{
+    color: green;
+font-size: large;}
+
+li::marker{
+    color: red;
+
+}
+
+::file-selector-button{
+    background: rgb(35, 35, 112);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+}
+div > p{
+    color: green;
+}
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.a1 {
+  width: 100px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  position: relative;
+  animation: slide 2s infinite;
+}
+@keyframes slide {
+  0% { 
+    background-color: red; 
+    left: 0px; 
+}
+    100% { 
+        background-color: blue; 
+        left: 200px; 
+    }
+}
