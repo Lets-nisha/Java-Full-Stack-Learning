@@ -1,0 +1,10 @@
+@media (max-width: 600px) {
+ 
+  .nav2 a {
+    display: none;
+  }
+  .nav2 h5 {
+    display: block;
+  }
+  
+}

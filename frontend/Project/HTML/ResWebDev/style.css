@@ -1,53 +1,85 @@
 html,
 body{
-    
+    width: 100%;
+    height: 100%;
 }
 
 /* flex */
 
-nav{
-    width: 100%;
+ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #becd13;
-    margin-bottom: 10px;
-      font-size: 20px;
-    padding: 10px;
+    background: #27066b;
+    color: white;
+    padding: 15px 15px;
+    position: sticky;
+    top: 10px;
+    font-family: monospace;
+    font-size: 20px;
 
 }
 
 .nav1{
-    width: 40%;
-}
- 
-.navbar{
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
     cursor: pointer;
-    
+    font-size: 20px;
+
 }
-.navbar a{
+
+.nav2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:20px;
+    padding: 10px 15px;
+}
+.nav2 h5{
+ display: none;
+}
+
+.nav2 a{
     text-decoration: none;
-    color: black;
+    color: white;
+    cursor: pointer;
 }
 
 .main1{
-    /* padding: 10px; */
+    padding-top: 10px;
     height: 100%;
     width: 100%;
     display: grid;
     /* grid-auto-flow: dense; */
     grid-template-columns: 1fr 1fr  ;
-    grid-template-rows:400px  ;
+    grid-template-rows:500px  ;
 }
+
+.img-1{
+    overflow: hidden;
+}
+
+.img-1 img{
+    object-fit:contain;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+}
+
+.main-2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-transform: capitalize;
+    object-fit: contain;
+
+
+}
+
 .main1 div{
     padding: 10px;
-
-    background: crimson;
+    /* background: crimson; */
     border: 2px solid white;
     
 }
@@ -60,7 +92,7 @@ nav{
     display: grid;
     /* grid-auto-flow: dense; */
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr;
+    grid-template-rows:200px  200px  200px ;
 }
 
 .child{
@@ -71,13 +103,19 @@ nav{
     align-self: center;
     justify-self: center;
 }
+
 .child2{
     background: rgb(39, 44, 180);
     border: 2px solid white;
-}.child3{
+}
+
+.child3{
     background: rgb(35, 177, 99);
     border: 2px solid white;
-}.child4{
+}
+
+.child4{
     background: rgb(186, 197, 31);
     border: 2px solid white;
 }
+
