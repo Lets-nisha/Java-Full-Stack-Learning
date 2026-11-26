@@ -1,9 +1,14 @@
 @media (max-width: 600px) {
- 
+ .main1{
+  display: block;
+  font-size: 15px;
+ }
+
   .nav2 a {
     display: none;
   }
-  .nav2 h5 {
+  
+  .nav2 h4 {
     display: block;
   }
   

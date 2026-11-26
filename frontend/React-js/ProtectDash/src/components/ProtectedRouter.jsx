@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ProtectedRouter = () => {
-  return (
-    <div>ProtectedRouter</div>
-  )
+const ProtectedRouter = ({children}) => {
+
+  const user = localStorage.getItem("users");
+  return children
 }
 
 export default ProtectedRouter

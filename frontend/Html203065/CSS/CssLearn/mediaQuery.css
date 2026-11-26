@@ -1,0 +1,52 @@
+.paent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+}
+
+.child1{
+    font-size: 20px;
+    margin-bottom:20px ;
+}
+
+/* ------------------------desktop view ---------------------- */
+
+@media (min-width:1024px) {
+      .child1{
+        color: greenyellow;
+    }
+    
+}
+
+/* ---------------------------tablet view-------------------- */
+
+@media (min-width:769px) and (max-width:1023px) {
+.child1{
+        color: brown;
+        text-transform: capitalize;
+    }
+}
+
+/* -------------------------mobile view ---------------------------------------- */
+
+@media (max-width:768px) {
+        .paent{
+            display: block;
+        }
+    .child1{
+        color: red;
+    }
+    .child2 img{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:468px) {
+
+.child1{
+        color: blue;
+    }
+}

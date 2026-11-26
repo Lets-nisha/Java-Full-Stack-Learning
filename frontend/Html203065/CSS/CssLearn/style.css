@@ -214,11 +214,11 @@ div > p {
 }
 .a12 {
   animation-delay: 1s;
-  background-color: #3ea30f;
+  background-color: #2b4dbc;
 }
 .a13 {
   animation-delay: 2s;
-  background-color: #3ea30f;
+  background-color: #971744;
 }
 
 @keyframes slide {
@@ -233,6 +233,7 @@ div > p {
   }
 }
 
+/* ---------------------------------------------------------------- */
 .loader {
   display: flex;
   gap: 15px;
@@ -254,48 +255,178 @@ div > p {
   animation-delay: 0.4s;
 }
 @keyframes bounce {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-20px); }
-  100% { transform: translateY(0); }
-}
-
-/* -------------------timing functin ease-in ---------------------- */
-
-.tim1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.timeB {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  animation: slide1 2s ease-in;
-}
-.tim1 {
-  animation-delay: 0s;
-  background-color: #279398;
-}
-.tim12 {
-  animation-delay: 1s;
-  background-color: #5b164c;
-}
-.tim13 {
-  animation-delay: 2s;
-  background-color: #b31424;
-}
-
-@keyframes slide1 {
   0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-150px);
+    transform: translateY(-20px);
   }
   100% {
     transform: translateY(0);
   }
 }
 
-/* -------------------timing functin easy ---------------------- */
+/* -------------------timing functin start ---------------------- */
+
+.timefuc1 {
+  border: 2px solid black;
+  padding: 5px;
+  margin: 10px;
+  width: 50%;
+}
+
+.time1 {
+  width: 100px;
+  height: 100px;
+  background-color: #279398;
+  border-radius: 50%;
+  animation: move 4s ease;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(350px);
+  }
+}
+
+.time2 {
+  width: 100px;
+  height: 100px;
+  background-color: #279398;
+  border-radius: 50%;
+  animation: move2 4s ease-in;
+}
+
+@keyframes move2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(350px);
+  }
+}
+
+.time3 {
+  width: 100px;
+  height: 100px;
+  background-color: #279398;
+  border-radius: 50%;
+  animation: move3 4s ease-in-out;
+}
+
+@keyframes move3 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(350px);
+  }
+}
+
+.time4 {
+  width: 100px;
+  height: 100px;
+  background-color: #279398;
+  border-radius: 50%;
+  animation: move4 4s ease-out;
+  /* animation: move4 4s steps(5); */
+}
+
+@keyframes move4 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(350px);
+  }
+}
+
+/* -------------------timing functin end ---------------------- */
+
+.time12 {
+  width: 100px;
+  height: 100px;
+  background-color: #279398;
+  border-radius: 50%;
+  animation: move12 4s normal;
+}
+
+@keyframes move12 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(350px);
+  }
+}
+
+.time23 {
+  width: 100px;
+  height: 100px;
+  background-color: #279398;
+  border-radius: 50%;
+  animation: move23 4s reverse;
+}
+
+@keyframes move23 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(350px);
+  }
+}
+
+.time34 {
+  width: 100px;
+  height: 100px;
+  background-color: #279398;
+  border-radius: 50%;
+  animation: move34 4s alternate;
+}
+
+@keyframes move34 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(350px);
+  }
+}
+
+.time45 {
+  width: 100px;
+  height: 100px;
+  background-color: #279398;
+  border-radius: 50%;
+  animation: move4 4s alternate-reverse;
+  /* animation: move45 4s steps(5); */
+}
+
+@keyframes move45 {
+  from {
+    transform: translateX(0);
+    background: #c41010;
+  }
+  to {
+    transform: translateX(350px);
+    background: #5fba2e;
+  }
+}
+
+/* --------------------------end----------------------------------------------------------- */
+
+.fill-mode div {
+  width: 150px;
+  margin: 10px;
+  border: 2px solid black;
+  padding: 10px;
+  background-color:  rgb(8, 8, 120);
+  color: white;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------- */
