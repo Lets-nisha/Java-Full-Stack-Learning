@@ -10,7 +10,6 @@
     <h1>Dom learning</h1>
     <h1>day 1</h1>
 
-   
     <hr />
 
     <h1 id="heading">Heyy Student</h1>
@@ -61,10 +60,24 @@
 
     <hr />
 
-     <input type="checkbox" id="agreeCheck" /> <br /><br />
+    <input type="checkbox" id="agreeCheck" /> <br /><br />
     <button id="submitBtn" disabled>Submit</button>
 
+    <hr />
 
-    <script src="dom.js"></script>
+    <ul class="list1">
+      <li>html</li>
+      <li>css</li>
+    </ul>
+    <script>
+      const List = document.querySelector(".list1");
+      const newList = document.createElement("li");
+
+      newList.innerText = "JS";
+      List.appendChild(newList);
+
+      List.appendChild(newList)
+
+    </script>
   </body>
 </html>

@@ -1,15 +1,31 @@
-@media (max-width: 600px) {
- .main1{
-  display: block;
-  font-size: 15px;
- }
-
-  .nav2 a {
+@media (max-width: 768px) {
+  .nav2 a{
     display: none;
   }
-  
-  .nav2 h4 {
-    display: block;
+  .nav2 div{
+  display: block;
+
   }
-  
+.main1 {
+  padding-top: 30px;
+  display: block;
+}
+   .img-1 img {
+  width: 100%;
+}
+}
+
+@media (max-width: 600px) {
+    .footer-links {
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .footer-content h2 {
+        font-size: 24px;
+    }
+
+    .footer-content p {
+        padding: 0 15px;
+    }
 }

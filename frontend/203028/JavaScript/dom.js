@@ -131,3 +131,6 @@ const btn = document.getElementById("submitBtn");
 checkbox.addEventListener("change", function () {
   btn.disabled = !checkbox.checked;
 });
+
+// list
+
